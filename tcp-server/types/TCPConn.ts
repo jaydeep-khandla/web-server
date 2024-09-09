@@ -10,13 +10,13 @@ type TCPConn = {
   // the JS socket object
   socket: net.Socket;
   // from the 'error' event
-  err: null | Error;
+  err?: null | Error;
   // EOF, from the 'end' event
-  ended: boolean;
+  ended?: boolean;
   // whether the connection is closed
-  closed: boolean;
+  closed?: boolean;
   // the callbacks of the promise of the current read
-  reader: null | {
+  reader?: null | {
     resolve: (value: Buffer) => void;
     reject: (reason: Error) => void;
   };
