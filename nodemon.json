@@ -1,0 +1,12 @@
+{
+    "watch": [
+        "tcp-server/**/*",
+        "http-server/**/*"
+    ],
+    "ext": "ts",
+    "ignore": [
+        "node_modules",
+        "dist/**/*"
+    ],
+    "exec": "ts-node"
+}
